@@ -4,3 +4,4 @@ all:
 	g++ -std=c++1z src/vector_to_out.cpp -o vector_to_out
 	g++ -std=c++1z src/container_to_out.cpp -o container_to_out
 	g++ -std=c++1z src/matrix.cpp -o matrix
+	g++ -std=c++1z src/indexed_range.cpp -o indexed_range
