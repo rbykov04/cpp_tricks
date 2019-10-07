@@ -8,3 +8,4 @@ all:
 	g++ -std=c++1z src/forward_list_wrapper.cpp -o forward_list_wrapper
 	g++ -std=c++1z src/combain_rande.cpp -o combain_rande
 	g++ -std=c++1z src/sum_digit.cpp -o sum_digit
+	g++ -std=c++1z src/backtrack.cpp -o backtrack
