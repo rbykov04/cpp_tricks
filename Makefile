@@ -11,3 +11,6 @@ all:
 	# g++ -std=c++1z src/sum_digit.cpp -o sum_digit
 	# g++ -std=c++1z src/backtrack.cpp -o backtrack
 	# g++ -std=c++1z src/container_convolution.cpp -o container_convolution
+	# g++ -std=c++1z src/fib.cpp -o fib
+	# g++ -std=c++1z src/matrix22.cpp -o matrix22
+
