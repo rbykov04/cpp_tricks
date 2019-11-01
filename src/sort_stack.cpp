@@ -79,6 +79,9 @@ int main(){
 	st.push(33);
 	st.push(144);
 	st.push(22);
+	st.push(22);
+	st.push(22);
+	st.push(2);
 
 	cout<<st<<"->"<<"\n";
 	sort_stack(st);
