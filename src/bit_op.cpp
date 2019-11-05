@@ -36,14 +36,14 @@ bit_print operator&(bit_print b, bit_print v){
     std::cout<<"    "<<b.x<<"(0x"<<std::hex<<b.x<<")"<<std::dec<<" & 0x"<<v.x<<"(0x"<<std::hex<<v.x<<")"<<std::dec<<"\n";
     std::cout<<b<<" &\n"<<v<<"\n";
     b.x&=v.x;
-    std::cout<<b<<" : "<<b.x<<" : "<<std::hex<<b.x<<std::dec<<"\n";
+    std::cout<<b<<" : "<<b.x<<" : "<<std::hex<<b.x<<std::dec<<"\n\n";
    // std::cout<<"--------------------------------------------\n";
     return b;
 }
 bit_print operator<<(bit_print b, bit_print v){
     std::cout<<b<<" << "<<v.x<<"\n";
     b.x<<=v.x;
-    std::cout<<b<<" : "<<b.x<<" : "<<std::hex<<b.x<<std::dec<<"\n";
+    std::cout<<b<<" : "<<b.x<<" : "<<std::hex<<b.x<<std::dec<<"\n\n";
    // std::cout<<"--------------------------------------------\n";
     return b;
 }
@@ -52,14 +52,14 @@ bit_print operator|(bit_print b, bit_print v){
     std::cout<<"    "<<b.x<<"(0x"<<std::hex<<b.x<<")"<<std::dec<<" | "<<v.x<<"(0x"<<std::hex<<v.x<<")"<<std::dec<<"\n";
     std::cout<<b<<" |\n"<<v<<"\n";
     b.x|=v.x;
-    std::cout<<b<<" : "<<b.x<<" : "<<std::hex<<b.x<<std::dec<<"\n";
+    std::cout<<b<<" : "<<b.x<<" : "<<std::hex<<b.x<<std::dec<<"\n\n";
    // std::cout<<"--------------------------------------------\n";
     return b;
 }
 bit_print operator>>(bit_print b, bit_print v){
     std::cout<<b<<" >> "<<v.x<<"\n";
     b.x>>=v.x;
-    std::cout<<b<<" : "<<b.x<<" : "<<std::hex<<b.x<<std::dec<<"\n";
+    std::cout<<b<<" : "<<b.x<<" : "<<std::hex<<b.x<<std::dec<<"\n\n";
    // std::cout<<"--------------------------------------------\n";
 
     return b;
@@ -84,5 +84,8 @@ int main(){
     x = x|(x>>4);
     x = x|(x>>8);
     x = x|(x>>16);
+
+    bit_print y = 1025;
+    y & (y>>1);
     return 0;
 }

@@ -1,5 +1,6 @@
 all:
-	g++ -std=c++1z src/bit_op.cpp -o bit_op
+	g++ -std=c++1z src/substr/34-1-native-string-matcher.cpp -o 34-1-native-string-matcher
+	# g++ -std=c++1z src/bit_op.cpp -o bit_op
 	#g++ -std=c++1z src/sort_stack.cpp -o sort_stack
 	# g++ -std=c++1z src/iterator_constexpr_range.cpp -o iterator_constexpr_range
 	# g++ -std=c++1z src/iterator_constexpr_long_range.cpp -o iterator_constexpr_long_range
